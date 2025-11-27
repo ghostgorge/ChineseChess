@@ -1,0 +1,5 @@
+{
+  "name": "Xiangqi Master AI",
+  "description": "Play Chinese Chess (Xiangqi) against an intelligent AI powered by Gemini. Features three difficulty levels, move validation, and a beautiful classic interface.",
+  "requestFramePermissions": []
+}

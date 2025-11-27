@@ -8,13 +8,28 @@ This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/drive/1LrqiPl18VDOenDBsaarRV51oZS7lXOA2
 
-## Run Locally
+### **How to Run the Project**
 
-**Prerequisites:**  Node.js
+Since this is a standard React project structure using ES modules, you can run it using a modern frontend toolchain.
 
+1. **Install Dependencies:**
+   Make sure you have node installed.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   
+
+   ```Bash
+   npm install react react-dom lucide-react @google/genai tailwindcss
+   # You might need a build tool like Vite
+   npm install -D vite @vitejs/plugin-react
+   ```
+
+2. **Start the Development Server:**
+
+   ```bash
+   npx vite
+   ```
+
+   Then open the local URL provided (usually http://localhost:5173).
+
+3. **API Key:**
+   The AI features require a Gemini API key. Ensure process.env.API_KEY is available or set it in your .env file for the build tool to pick up.
